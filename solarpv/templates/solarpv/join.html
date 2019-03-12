@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Billy Downing -->
+    <title>Join</title>
+    <link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/desktop.css" />
+    <meta name="viewport" content="initial-scale=1">
+
+
+</head>
+<header>
+    <nav class="nav">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="login.html">Logout</a>
+            </li>
+            <li>
+                <a href="join.html">Join</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+        <div class="center-div">
+        <header>Signup</header>
+        <form action="login.html" method="POST">
+            <input type="text" name="username" placeholder="Username" maxlength="8" required>
+            <br>
+            <input type="password" name="password" id="password" placeholder="Password" onchange='check_pass();' required>
+            <br>
+            <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password" onchange='check_pass();'
+                required>
+            <br>
+            <input type="text" name="firstname" placeholder="First Name">
+            <br>
+            <input type="text" name="lastname" placeholder="Last Name" required>
+            <br>
+            <input type="radio" name="gender" value="male" checked> Male
+            <br>
+            <input type="radio" name="gender" value="female"> Female
+            <br>
+            <input type="radio" name="gender" value="other"> Other
+            <br>
+            <input type="text" name="address" placeholder="Address" required>
+            <br>
+            <input type="text" name="city" placeholder="City" required>
+            <br>
+            <input type="text" name="state" placeholder="State" required>
+            <br>
+            <input type="text" name="zip" placeholder="Zip" pattern="[1-9]" required>
+            <br>
+            <input type="text" name="phone" placeholder="Phone" pattern="[1-9]" maxlength="10">
+            <br>
+            <input type="email" name="email" placeholder="Email" required>
+            <br>
+            <input type="text" name="company" placeholder="Company" required>
+            <br>
+            <input type="submit" id="submit" disables>
+        </form>
+        </div>
+    </div>
+    <script>
+        function check_pass() {
+            if (document.getElementById('password').value ==
+                document.getElementById('confirm_password').value) {
+                document.getElementById('submit').disabled = false;
+            } else {
+                document.getElementById('submit').disabled = true;
+            }
+        }
+    </script>
+</body>
+
+</html>
