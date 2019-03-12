@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Billy Downing -->
+    <title>Dashboard</title>
+    <link rel="stylesheet" media="only screen and (min-width: 961px)" href="../../static/solarpv/css/desktop.css" />
+    <meta name="viewport" content="initial-scale=1">
+
+</head>
+<header>
+    <nav class="nav">
+        <ul>
+            <li>
+                <a href="{% url 'index' %}"">Home</a>
+            </li>
+            <li>
+                <a href="{% url 'login' %}"">Login</a>
+            </li>
+            <li>
+                <a href="{% url 'join' %}">Join</a>
+            </li>
+            <li>
+                <a href="{% url 'dashboard' %}">Dashboard</a>
+            </li>   
+        </ul>
+    </nav>
+</header>
+
+<body>
+        <div class="left-div">
+        <header>CLIENT</header>
+            <input type="text" name="firstname" placeholder="First Name">
+            <br>
+            <input type="text" name="firstname" placeholder="First Name">
+            <br>
+            <input type="text" name="firstname" placeholder="First Name">
+            <br>
+            <input type="text" name="middlename" placeholder="Middle Name" required>
+            <br>
+            <input type="text" name="lastname" placeholder="Last Name" required>
+            <br>
+            <input type="text" name="jobtitle" placeholder="Job Title" required>
+            <br>
+            <input type="text" name="onumber" placeholder="Office Number" required>
+            <br>
+            <input type="text" name="cnumber" placeholder="Cell Number" required>
+            <br>
+            <input type="email" name="email" placeholder="Email" required>
+            <br>
+            <input type="submit" id="submit" disables>
+            </form>
+        </div>
+        <div class="left-div">
+            <header>LOCATION</header>
+                <input type="text" name="locationanme" placeholder="Location Name">
+                <br>
+                <input type="text" name="address" placeholder="Address" required>
+                <br>
+                <input type="text" name="phonenumber" placeholder="Phone Number" required>
+                <br>
+                <select>
+                    <option value="factory">factory</option>
+                    <option value="corporate">corporate</option>
+                    <option value="home">home</option>
+                    <option value="branch">branch</option>
+                  </select>
+                <br>
+                <input type="submit" id="submit" disables>
+            </form>
+        </div>
+        <div class="left-div">
+            <header>PRODUCT</header>
+                <input type="text" name="firstname" placeholder="First Name">
+                <br>
+                <input type="text" name="middlename" placeholder="Middle Name" required>
+                <br>
+                <input type="text" name="lastname" placeholder="Last Name" required>
+                <br>
+                <input type="text" name="address" placeholder="Address" required>
+                <br>
+                <input type="text" name="onumber" placeholder="Office Number" required>
+                <br>
+                <input type="text" name="cnumber" placeholder="Cell Number" required>
+                <br>
+                <input type="email" name="email" placeholder="Email" required>
+                <br>
+                <input type="submit" id="submit" disables>
+            </form>
+        </div>
+        <div class="left-div">
+            <header>TEST STANDARD</header>
+                <input type="text" name="testid" placeholder="Test ID">
+                <br>
+                <input type="text" name="testname" placeholder="Test Name" required>
+                <br>
+                <input type="text" name="testdesc" placeholder="Test Description" required>
+                <br>
+                <input type="text" name="testpubdate" placeholder="Published Date" required>
+                <br>
+                <input type="submit" id="submit" disables>
+                </form>
+            </div>
+            <div class="left-div">
+                <header>CERTIFICATE</header>
+                    <input type="text" name="client" placeholder="Client Name">
+                    <br>
+                    <input type="text" name="location" placeholder="Coporate Location" required>
+                    <br>
+                    <input type="text" name="testrepnum" placeholder="Report Number" required>
+                    <br>
+                    <input type="text" name="projecthandler" placeholder="Project Handler" required>
+                    <br>
+                    <input type="text" name="standard" placeholder="Associated Standard" required>
+                    <br>
+                    <input type="text" name="certdate" placeholder="Certificate Issue Date" required>
+                    <br>
+                    <input type="text" name="product" placeholder="Product" required>
+                    <br>
+                    <input type="submit" id="submit" disables>
+                </form>
+            </div>
+</body>
+</html>

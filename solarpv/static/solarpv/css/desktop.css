@@ -7,8 +7,28 @@
     border: 5px solid grey;
     border-radius: 10px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
 
+.left-div {
+    width: 200px;
+    height: 400px;
+    padding: 20px;
+    float: left;
+    text-align: left;
+    border: 5px solid grey;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
 
+.right-div {
+    width: 200px;
+    height: 400px;
+    padding: 20px;
+    float: right;
+    text-align: left;
+    border: 5px solid grey;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .center-div header{
@@ -73,6 +93,16 @@
     padding: 10px 0px 10px 10px;
     margin: 10px 0px 10px 10px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.right-block {
+    background-color: black;
+    width: 125px;
+    height: 600px;
+    padding: 10px;
+    float: right;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
 }
 
 .main-content {

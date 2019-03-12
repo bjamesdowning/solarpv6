@@ -13,14 +13,17 @@
     <nav class="nav">
         <ul>
             <li>
-                <a href="index.html">Home</a>
+                <a href="{% url 'index' %}"">Home</a>
             </li>
             <li>
-                <a href="login.html">Logout</a>
+                <a href="{% url 'login' %}"">Login</a>
             </li>
             <li>
-                <a href="join.html">Join</a>
+                <a href="{% url 'join' %}">Join</a>
             </li>
+            <li>
+                <a href="{% url 'dashboard' %}">Dashboard</a>
+            </li>     
         </ul>
     </nav>
 </header>

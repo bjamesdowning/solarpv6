@@ -7,3 +7,9 @@ def index(request):
 
 def login(request):
     return render(request, 'solarpv/login.html')
+
+def join(request):
+    return render(request, 'solarpv/join.html')
+
+def dashboard(request):
+    return render(request, 'solarpv/dashboard.html')
